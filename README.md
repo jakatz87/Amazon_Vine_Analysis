@@ -11,10 +11,7 @@ I used the ETL process to analyze Amazon reviews for Tools.
 - SQL, pgAdmin
 
 ## Results
-- The first part of the project was extracting the data from Amazon's S3 service: ```from pyspark import SparkFiles
-url = "https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Tools_v1_00.tsv.gz"
-spark.sparkContext.addFile(url)
-df = spark.read.option("encoding", "UTF-8").csv(SparkFiles.get("amazon_reviews_us_Tools_v1_00.tsv.gz"), sep="\t", header=True, inferSchema=True)```
+- The first part of the project was extracting the data from Amazon's S3 service: 
 ![orig](https://github.com/jakatz87/Amazon_Vine_Analysis/blob/main/Resources/Images/Tools_Reviews.png)
 
 - I then used PySpark to transform the data into smaller DataFrames or Tables:  
