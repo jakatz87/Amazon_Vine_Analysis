@@ -54,4 +54,9 @@ The percentage of 5 Star Non Vine reviews is: \
 - 46.33% of the Non-Vine Ratings were 5 Stars
 
 ## Summary
- 
+Although Amazon takes pride in its Vine program for reviews, this analysis raises a question of bias.  Although the sample sizes vary drastically, the percentage of 5 Star ratings is nearly 10% higher coming from Vine reviewers.  The difference in sample size may not account for the differece in 5 Star ratings.  
+
+Some further investigation may incldue:
+- A t test to compare the Vine reviews and the non Vine reviewers
+- Comparing summary statistics on Star Ratings
+- Tokenizing the review texts and comparing the Star Ratings for every reviewer
