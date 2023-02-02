@@ -45,8 +45,10 @@ The number of 5 Star Non Vine reviews is: {non_vine_df.select('star_rating').whe
 - There were 149 Vine 5 Star Ratings to 13,675 Non-Vine 5 Star Ratings
 
 ```
-print(f"The percentage of 5 Star Vine reviews is: {round(vine_df.select('star_rating').where(vine_df.star_rating==5).count()/(vine_df.count())*100,2)}%   \n\
-The percentage of 5 Star Non Vine reviews is: {round((non_vine_df.select('star_rating').where(non_vine_df.star_rating==5).count()/non_vine_df.count())*100,2)}%")
+print(f"The percentage of 5 Star Vine reviews is: \
+{round(vine_df.select('star_rating').where(vine_df.star_rating==5).count()/(vine_df.count())*100,2)}%   \n\
+The percentage of 5 Star Non Vine reviews is: \
+{round((non_vine_df.select('star_rating').where(non_vine_df.star_rating==5).count()/non_vine_df.count())*100,2)}%")
 ```
 - 55.6% of the Vine Ratings were 5 Stars
 - 46.33% of the Non-Vine Ratings were 5 Stars
